@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@keenthemes/ktui/styles.css";
 
 @theme {
   --color-primary-50: #effdf5;

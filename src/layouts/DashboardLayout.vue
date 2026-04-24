@@ -16,9 +16,9 @@ const themeStore = useThemeStore();
           <i class="fa-solid fa-vial ml-2 text-gray-500"></i>
           سامانه و پلاگین‌ها
         </router-link>
-        <router-link to="/ktui" class="block p-2 rounded hover:bg-gray-100 dark:hover:bg-slate-700 transition" active-class="bg-gray-100 dark:bg-slate-700 text-[var(--primary)] text-bold">
+        <router-link to="/primevue" class="block p-2 rounded hover:bg-gray-100 dark:hover:bg-slate-700 transition" active-class="bg-gray-100 dark:bg-slate-700 text-[var(--primary)] text-bold">
           <i class="fa-solid fa-cubes ml-2 text-gray-500"></i>
-          کامپوننت‌های KTUI
+          کامپوننت‌های PrimeVue
         </router-link>
       </nav>
     </aside>

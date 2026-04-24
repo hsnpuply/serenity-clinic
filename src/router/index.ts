@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Example from '@/pages/Example.vue';
-import KtuiPage from '@/pages/KtuiPage.vue';
+import PrimeVuePage from '@/pages/PrimeVuePage.vue';
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
-    redirect: '/ktui'
+    redirect: '/primevue'
   },
   {
     path: '/example',
@@ -14,9 +14,9 @@ const routes: RouteRecordRaw[] = [
     component: Example
   },
   {
-    path: '/ktui',
-    name: 'KtuiPage',
-    component: KtuiPage
+    path: '/primevue',
+    name: 'PrimeVuePage',
+    component: PrimeVuePage
   }
 ];
 
