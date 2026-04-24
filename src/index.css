@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "@keenthemes/ktui/styles.css";
+
+@theme {
+  --color-primary-50: #effdf5;
+  --color-primary-100: #d6fce5;
+  --color-primary-200: #b0fad2;
+  --color-primary-300: #78f3b7;
+  --color-primary-400: #3de494;
+  --color-primary-500: #16ca74;
+  --color-primary-600: #0ba55d;
+  --color-primary-700: #0a824b;
+  --color-primary-800: #0a663d;
+  --color-primary-900: #0a5433;
+  --color-primary-950: #052f1e;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-mono: var(--mono);
+  --color-mono-foreground: var(--mono-foreground);
+  --color-ring: var(--ring);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --font-sans: "Inter", "Vazirmatn", "IRANSans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --border: #e2e8f0;
+    --primary: var(--color-primary-600);
+    --primary-foreground: #ffffff;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --input: #e2e8f0;
+    --mono: #0f172a;
+    --mono-foreground: #ffffff;
+    --ring: #94a3b8;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+  }
+
+  .dark {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --border: #334155;
+    --primary: var(--color-primary-500);
+    --primary-foreground: #000000;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --input: #334155;
+    --mono: #f8fafc;
+    --mono-foreground: #000000;
+    --ring: #475569;
+    --popover: #1e293b;
+    --popover-foreground: #f8fafc;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    position: relative;
+    font-family: var(--font-sans);
+    direction: rtl;
+  }
+
+  /* FontAwesome specific RTL fixes if needed */
+  .fa-ul {
+    margin-right: var(--fa-li-width, 2.5em);
+    margin-left: auto;
+  }
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+}

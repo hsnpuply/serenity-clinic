@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Vue Dashboard",
+  "description": "RTL Dashboard template using Vue 3, Pinia, TailwindCSS, ECharts, Swiper, and DotLottie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

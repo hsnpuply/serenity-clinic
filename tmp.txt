@@ -1,0 +1,282 @@
+			'[data-kt-accordion-toggle]',
+					'[data-kt-accordion-item]',
+			'[data-kt-accordion-toggle]',
+			'[data-kt-accordion-toggle]',
+		if (element.getAttribute('data-kt-accordion-initialized') === 'true') {
+		const elements = document.querySelectorAll('[data-kt-accordion]');
+const SELECTOR_VIEWPORT = '[data-kt-carousel-viewport]';
+const SELECTOR_ITEM = '[data-kt-carousel-item]';
+const SELECTOR_PREV = '[data-kt-carousel-prev]';
+const SELECTOR_NEXT = '[data-kt-carousel-next]';
+const SELECTOR_PAGINATION = '[data-kt-carousel-pagination]';
+const SELECTOR_PAGINATION_ITEM = '[data-kt-carousel-pagination-item]';
+const SELECTOR_THUMBS = '[data-kt-carousel-thumbnails]';
+const SELECTOR_THUMB = '[data-kt-carousel-thumbnail]';
+const SELECTOR_CURRENT = '[data-kt-carousel-current]';
+const SELECTOR_TOTAL = '[data-kt-carousel-total]';
+			this._element.setAttribute('data-kt-carousel-show-scrollbar', 'true');
+			this._element.removeAttribute('data-kt-carousel-show-scrollbar');
+			'data-kt-carousel-pagination-active',
+			'data-kt-carousel-thumbnail-active',
+			.querySelectorAll<HTMLElement>('[data-kt-carousel]')
+				if (el.getAttribute('data-kt-carousel-lazy') === 'true') {
+			this._element?.hasAttribute('data-kt-clipboard-text'),
+		// - If `data-kt-clipboard-text` attribute is present, it wins over target.
+							'Cut action requires data-kt-clipboard-target pointing to an input/textarea.',
+					'Missing clipboard source (provide data-kt-clipboard-text or data-kt-clipboard-target).',
+		document.querySelectorAll('[data-kt-clipboard]').forEach((el) => {
+				this._element.getAttribute('data-kt-collapse') as string,
+		if (element.getAttribute('data-kt-collapse')) {
+		const elements = document.querySelectorAll('[data-kt-collapse]');
+						`th[data-kt-datatable-column="${String(sortField)}"], th[data-kt-datatable-column-sort="${String(sortField)}"]`,
+				header.getAttribute('data-kt-datatable-column-sort') === 'false';
+				header.getAttribute('data-kt-datatable-column-sort') ||
+				header.getAttribute('data-kt-datatable-column');
+				table: 'table[data-kt-datatable-table="true"]',
+				info: '[data-kt-datatable-info="true"]',
+				size: '[data-kt-datatable-size="true"]',
+				pagination: '[data-kt-datatable-pagination="true"]',
+				spinner: '[data-kt-datatable-spinner="true"]',
+				check: '[data-kt-datatable-check="true"]',
+				checkbox: '[data-kt-datatable-row-check="true"]',
+				`[data-kt-datatable-search="#${tableId}"]`,
+		// Filter th elements to only include those with data-kt-datatable-column attribute
+			th.hasAttribute('data-kt-datatable-column'),
+				const colName = ths[index]?.getAttribute('data-kt-datatable-column');
+		// Count th elements with data-kt-datatable-column; when none (e.g. multi-row headers), use logical column count so we don't falsely invalidate
+			th.hasAttribute('data-kt-datatable-column'),
+		// Filter th elements to only include those with data-kt-datatable-column attribute
+			th.hasAttribute('data-kt-datatable-column'),
+		// When no th has data-kt-datatable-column (e.g. multi-row headers), use logical column count from tbody so we don't overcount thead cells
+					const colName = th?.getAttribute('data-kt-datatable-column');
+		spinner.setAttribute('data-kt-datatable-spinner', 'true');
+				`[data-kt-datatable-search="#${tableId}"]`,
+	 * Create KTDataTable instances for all elements with a data-kt-datatable="true" attribute.
+			'[data-kt-datatable="true"]',
+				element.hasAttribute('data-kt-datatable') &&
+			'[data-kt-datatable="true"]',
+				element.removeAttribute('data-kt-datatable-initialized');
+				this._element.getAttribute('data-kt-dismiss') as string,
+		if (element.getAttribute('data-kt-dismiss')) {
+		const elements = document.querySelectorAll('[data-kt-dismiss]');
+		KTEventHandler.on(this._element, '[data-kt-drawer-hide]', 'click', () => {
+				if (!this._element.hasAttribute('data-kt-drawer-original-parent-id')) {
+							'data-kt-drawer-original-parent-id',
+			'[data-kt-drawer-focus]',
+		this._backdropElement.setAttribute('data-kt-drawer-backdrop', 'true');
+		if (reference && reference.hasAttribute('data-kt-drawer-initialized'))
+			(reference.closest('[data-kt-drawer-initialized]') as HTMLElement);
+		// Fallback: look for parent with data-kt-drawer attribute
+				'[data-kt-drawer]',
+		if (reference && reference.hasAttribute('data-kt-drawer-toggle')) {
+			const selector = reference.getAttribute('data-kt-drawer-toggle');
+		if (drawerElement.getAttribute('data-kt-drawer-initialized') === 'true') {
+		const elements = document.querySelectorAll('[data-kt-drawer-initialized]');
+						.querySelectorAll('[data-kt-drawer-initialized]')
+				void (target && target.hasAttribute('data-kt-drawer-toggle'));
+			'[data-kt-drawer-toggle]',
+				const selector = target.getAttribute('data-kt-drawer-toggle');
+			'[data-kt-drawer-dismiss]',
+					'[data-kt-drawer="true"]',
+				'.open[data-kt-drawer-initialized]',
+				'.open[data-kt-drawer-initialized]',
+		const elementsInDoc = document.querySelectorAll('[data-kt-drawer]');
+		const elementsInBody = document.body.querySelectorAll('[data-kt-drawer]');
+		const elementsInDoc = document.querySelectorAll('[data-kt-drawer]');
+		const elementsInBody = document.body.querySelectorAll('[data-kt-drawer]');
+				element.removeAttribute('data-kt-drawer-initialized');
+			'[data-kt-dropdown-toggle]',
+			'[data-kt-dropdown-menu]',
+			'[data-kt-dropdown-toggle]',
+				'[data-kt-dropdown-item]',
+				?.querySelector('[data-kt-dropdown-menu]');
+		if (reference && reference.hasAttribute('data-kt-dropdown-initialized'))
+			(reference.closest('[data-kt-dropdown-initialized]') as HTMLElement);
+		// Fallback: look for parent with data-kt-dropdown attribute
+				'[data-kt-dropdown]',
+			reference.hasAttribute('data-kt-dropdown-menu') &&
+		if (element.getAttribute('data-kt-dropdown-initialized') === 'true') {
+			.querySelectorAll('.open[data-kt-dropdown-initialized]')
+				'.open[data-kt-dropdown-initialized]:not([data-kt-dropdown-permanent="true"])',
+					'.open[data-kt-dropdown-initialized]:not([data-kt-dropdown-permanent="true"])',
+				'.open[data-kt-dropdown-initialized]',
+			'[data-kt-dropdown-toggle], [data-kt-dropdown-menu]',
+			'[data-kt-dropdown-toggle], [data-kt-dropdown-menu]',
+			'[data-kt-dropdown-toggle]',
+			'[data-kt-dropdown-dismiss]',
+		const elements = document.querySelectorAll('[data-kt-dropdown]');
+		const elements = document.querySelectorAll('[data-kt-dropdown]');
+				element.removeAttribute('data-kt-dropdown-initialized');
+				const menu = element.querySelector('[data-kt-dropdown-menu]');
+			'[data-kt-image-input-remove]',
+			'[data-kt-image-input-preview]',
+			'[data-kt-image-input-placeholder]',
+		if (element.getAttribute('data-kt-image-input')) {
+		const elements = document.querySelectorAll('[data-kt-image-input]');
+			const dropdownElement = target.closest('[data-kt-select-dropdown]');
+			'[data-kt-modal-input-focus]',
+		this._backdropElement.setAttribute('data-kt-modal-backdrop', 'true');
+		if (element.getAttribute('data-kt-modal')) {
+		const elements = document.querySelectorAll('[data-kt-modal-initialized]');
+			'[data-kt-modal-toggle]',
+				const selector = target.getAttribute('data-kt-modal-toggle');
+			'[data-kt-modal-dismiss]',
+					'[data-kt-modal-initialized]',
+				'.open[data-kt-modal-initialized]',
+				'.open[data-kt-modal-initialized]',
+		const elements = document.querySelectorAll('[data-kt-modal]');
+const ITEM_SELECTOR = '[data-kt-pin-input-item]';
+			'input[type="hidden"][data-kt-pin-input-hidden]',
+			h.setAttribute('data-kt-pin-input-hidden', 'true');
+			.querySelectorAll<HTMLElement>('[data-kt-pin-input]')
+				if (el.getAttribute('data-kt-pin-input-lazy') === 'true') {
+	 * Also read from `data-kt-pin-input-name` on the root.
+			.querySelectorAll<HTMLElement>('[data-kt-range-slider]')
+				if (el.getAttribute('data-kt-range-slider-lazy') === 'true') {
+ * updates with the current range value. Prefer `data-kt-range-slider-output` on the root.
+	/** Selector for the output element; also read from `data-kt-range-slider-output`. */
+				label.setAttribute('data-kt-rating-value', String(i));
+					label.getAttribute('data-kt-rating-value') || '0',
+		if (element.getAttribute('data-kt-rating') !== null) {
+		const elements = document.querySelectorAll<HTMLElement>('[data-kt-rating]');
+			if (el.getAttribute('data-kt-rating-lazy') === 'true') return;
+						.querySelectorAll('[data-kt-reparent-initialized]')
+		const elements = document.querySelectorAll('[data-kt-reparent]');
+const DELETE_SELECTOR = '[data-kt-repeater-delete]';
+		document.querySelectorAll('[data-kt-repeater]').forEach((el) => {
+		if (element.getAttribute('data-kt-scrollable')) {
+		const elements = document.querySelectorAll('[data-kt-scrollable]');
+						'[data-kt-scrollable-initialized]',
+			'[data-kt-scrollspy-anchor]',
+			(this._element.getAttribute('data-kt-scrollspy-target') as string) ||
+			'[data-kt-scrollspy-anchor]',
+		if (anchorElement.getAttribute('data-kt-scrollspy-anchor-offset')) {
+				anchorElement.getAttribute('data-kt-scrollspy-anchor-offset') as string,
+		if (anchorElement.getAttribute('data-kt-scrollspy-anchor-offset')) {
+				anchorElement.getAttribute('data-kt-scrollspy-anchor-offset') as string,
+				'[data-kt-scrollspy-group]',
+						.querySelector('[data-kt-scrollspy-anchor]')
+		if (element.getAttribute('data-kt-scrollspy')) {
+		const elements = document.querySelectorAll('[data-kt-scrollspy]');
+				this._element.getAttribute('data-kt-scrollto') as string,
+		if (element.getAttribute('data-kt-scrollto')) {
+		const elements = document.querySelectorAll('[data-kt-scrollto]');
+			'input[data-kt-select-search]',
+			'[data-kt-select-clear-button]',
+			'[data-kt-select-combobox-values]',
+	config?: KTSelectConfigInterface; // config from data-kt-select-config attribute
+			'[data-kt-select-option]',
+			'[data-kt-modal], .kt-modal, .kt-modal-center',
+	protected override readonly _dataOptionPrefix: string = 'kt-'; // Use 'kt-' prefix to support data-kt-select-option attributes
+	protected override readonly _config: KTSelectConfigInterface; // Holds option-specific data from data-kt-*
+	 * including standard HTML attributes and custom data-kt-* attributes.
+			// Custom data from data-kt-select-option attributes (parsed into this._config)
+			'[data-kt-select-option]',
+			'[data-kt-select-options]',
+	protected override readonly _dataOptionPrefix: string = 'kt-'; // Use 'kt-' prefix to support data-kt-select-option attributes
+			this._dropdownContentElement.querySelector('[data-kt-select-options]');
+			'[data-kt-select-option]',
+				// Get any existing selections from _preSelectOptions (e.g., data-kt-select-pre-selected)
+			'[data-kt-select-option]',
+			'[data-kt-select-options]',
+			'[data-kt-select-options]',
+			`[data-kt-select-options]`,
+			`[data-kt-select-load-more]`,
+			`[data-kt-select-option]`,
+			'[data-kt-select-option]',
+			`[data-kt-select-display]`,
+			`[data-kt-select-dropdown]`,
+			`input[data-kt-select-search]`,
+				`[data-kt-select-search]`,
+				'input[data-kt-select-search]',
+			'[data-kt-select-select-all]',
+			'[data-kt-select-options]',
+			`[data-kt-select-option]`,
+		// Handle data-kt-select-pre-selected attribute for React compatibility
+			'data-kt-select-pre-selected',
+					'KTSelect: Value display element is null. Cannot update display or placeholder. Check template for [data-kt-select-value].',
+					wrapper.setAttribute('data-kt-text-container', 'true');
+			`[data-kt-select-option]`,
+			`[data-kt-select-option]`,
+			`[data-kt-select-option]`,
+			this._dropdownContentElement.querySelectorAll(`[data-kt-select-option]`),
+		const elements = document.querySelectorAll<HTMLElement>('[data-kt-select]');
+				element.hasAttribute('data-kt-select') &&
+				!element.classList.contains('data-kt-select-initialized')
+		if (element.getAttribute('data-kt-select')) {
+				'[data-kt-select-options]',
+			this._dropdownContentElement.querySelector('[data-kt-select-options]');
+			'[data-kt-select-option]',
+			this._dropdownContentElement.querySelector('[data-kt-select-options]');
+				'[data-kt-select-options]',
+					'[data-kt-select-option]',
+				'[data-kt-select-remove-button]',
+	dropdown: `<div data-kt-select-dropdown class="kt-select-dropdown hidden {{class}}" style="z-index: {{zindex}};"></div>`,
+	options: `<ul role="listbox" aria-label="{{label}}" class="kt-select-options {{class}}" data-kt-select-options="true"></ul>`,
+	wrapper: `<div data-kt-select-wrapper class="kt-select-wrapper {{class}}"></div>`,
+		<div data-kt-select-combobox data-kt-select-display class="kt-select-combobox {{class}}">
+			<div data-kt-select-combobox-values="true" class="kt-select-combobox-values"></div>
+			<input class="kt-input kt-select-combobox-input" data-kt-select-search="true" type="text" placeholder="{{placeholder}}" role="searchbox" aria-label="{{label}}" {{disabled}} />
+			<button type="button" data-kt-select-clear-button="true" class="kt-select-combobox-clear-btn" aria-label="Clear selection">
+	placeholder: `<div data-kt-select-placeholder class="kt-select-placeholder {{class}}"></div>`,
+		<div data-kt-select-display class="kt-select-display {{class}}" tabindex="{{tabindex}}" role="button" data-selected="0" aria-haspopup="listbox" aria-expanded="false" aria-label="{{label}}" {{disabled}}>
+			<div class="kt-select-option-text" data-kt-text-container="true">{{text}}</div>
+		<li data-kt-select-option data-value="{{value}}" data-text="{{text}}" class="kt-select-option {{class}}" role="option" {{selected}} {{disabled}}>
+			<div class="kt-select-option-text" data-kt-text-container="true">{{text}}</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5 ms-auto hidden text-primary kt-select-option-selected:block"><path d="M20 6 9 17l-5-5"/></svg>
+	search: `<div data-kt-select-search class="kt-select-search {{class}}"><input type="text" data-kt-select-search="true" placeholder="{{searchPlaceholder}}" class="kt-input kt-input-ghost" role="searchbox" aria-label="{{searchPlaceholder}}"/></div>`,
+	searchEmpty: `<div data-kt-select-search-empty class="kt-select-search-empty {{class}}"></div>`,
+	tag: `<div data-kt-select-tag="true" class="kt-select-tag {{class}}"></div>`,
+	loadMore: `<li class="kt-select-load-more {{class}}" data-kt-select-load-more="true"></li>`,
+	selectAll: `<div data-kt-select-select-all class="kt-select-select-all"><button type="button" class="kt-select-select-all-button">{{text}}</button></div>`,
+	tagRemoveButton: `<button type="button" data-kt-select-remove-button class="kt-select-tag-remove" aria-label="Remove tag" tabindex="0"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg></button>`,
+		optionsSelector: string = '[data-kt-select-option]',
+		const container = this._element.querySelector('[data-kt-select-options]');
+		this._nextElement = this._element.querySelector('[data-kt-stepper-next]');
+		this._backElement = this._element.querySelector('[data-kt-stepper-back]');
+			console.error('data-kt-stepper-next not found');
+				element.getAttribute('data-kt-stepper-item'),
+			const numberElement = element.querySelector('[data-kt-stepper-number]');
+			.querySelectorAll('[data-kt-stepper-item]')
+		if (element.getAttribute('data-kt-stepper')) {
+		const elements = document.querySelectorAll('[data-kt-stepper]');
+		this._wrapperElement = this._element.closest('[data-kt-sticky-wrapper]');
+		this._attributeRoot = `data-kt-sticky-${this._getOption('name')}`;
+			(this._element.getAttribute('data-kt-sticky-target') as string) ||
+		if (element.getAttribute('data-kt-sticky')) {
+		const elements = document.querySelectorAll('[data-kt-sticky]');
+		this._tabElements = this._element.querySelectorAll('[data-kt-tab-toggle]');
+			'.active[data-kt-tab-toggle]',
+					this._currentTabElement.getAttribute('data-kt-tab-toggle'),
+			'[data-kt-tab-toggle]',
+			KTDom.getElement(tabElement.getAttribute('data-kt-tab-toggle')) ||
+			'[data-kt-dropdown-initialized],[data-kt-menu-initialized]',
+				'[data-kt-dropdown-toggle], [data-kt-menu-toggle]',
+		if (element.getAttribute('data-kt-tabs')) {
+		const elements = document.querySelectorAll('[data-kt-tabs]');
+			'[data-kt-theme-switch-toggle]',
+			'[data-kt-theme-switch-set]',
+					'data-kt-theme-switch-set',
+		this._element.setAttribute('data-kt-theme-switch-mode', mode);
+			'input[type="checkbox"][data-kt-theme-switch-state]',
+			if (element.getAttribute('data-kt-theme-switch-state') === this._mode) {
+					'<button data-kt-toast-action="true" class="' +
+					'<button data-kt-toast-cancel="true" class="' +
+					'<button data-kt-toast-dismiss="true" class="kt-alert-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>';
+			'[data-kt-toast-action]',
+			'[data-kt-toast-cancel]',
+			'[data-kt-toast-dismiss]',
+			progress.setAttribute('data-kt-toast-progress', 'true');
+			const oldestId = oldestToast.getAttribute('data-kt-toast-id');
+				progressEl = toast.querySelector('[data-kt-toast-progress]');
+		const progressEl = inst.element.querySelector('[data-kt-toast-progress]');
+			'[data-kt-toggle-password-trigger]',
+		if (element.getAttribute('data-kt-toggle-password')) {
+		const elements = document.querySelectorAll('[data-kt-toggle-password]');
+				this._element.getAttribute('data-kt-toggle') as string,
+		if (element.getAttribute('data-kt-toggle')) {
+		const elements = document.querySelectorAll('[data-kt-toggle]');
+				this._element.getAttribute('data-kt-tooltip') as string,
+			this._element.querySelector('[data-kt-tooltip-content]') ||
+				.querySelectorAll('[data-kt-tooltip-initialized]')
+		if (element.getAttribute('data-kt-tooltip')) {
+		document.querySelectorAll('[data-kt-tooltip]').forEach((element) => {
